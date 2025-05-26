@@ -1,0 +1,8 @@
+.calculator {
+  display: flex;
+  /* flex-direction: column; */
+  /* background-color: aqua; */
+}
+.operator {
+  width: 50px;
+}

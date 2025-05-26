@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="fname" placeholder="enter first name" />
+    <input type="text" id="lname" placeholder="enter last name" />
+    <button id="btn">submit</button>
+    <h1>hello all my name is <span id="fn"></span><span id="ln"></span></h1>
+    <script>
+      let fname = document.getElementById("fname");
+      let lname = document.getElementById("lname");
+      let btn = document.getElementById("btn");
+      let fn = document.getElementById("fn");
+      let ln = document.getElementById("ln");
+      btn.addEventListener("click", () => {
+        fn.innerText = fname.value;
+        ln.innerText = lname.value;
+        if (fname.value.length === 0 || lname.value.length === 0)
+          console.log("Please give first and last name");
+      });
+    </script>
+  </body>
+</html>

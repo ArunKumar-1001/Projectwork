@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let fetching = async () => {
+        let datas = await fetch("https://fakestoreapi.com/products");
+        let data = await datas.json();
+        data.map((items) => {
+          console.log(items);
+        });
+      };
+      fetching();
+    </script>
+  </body>
+</html>

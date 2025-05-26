@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body id="body">
+    <button id="blue">blue</button>
+    <button id="red">red</button>
+    <button id="yellow">yellow</button>
+    <button id="orange">orange</button>
+    <button id="pink">pink</button>
+    <script>
+      let blue = document.getElementById("blue");
+      let red = document.getElementById("red");
+      let yellow = document.getElementById("yellow");
+      let orange = document.getElementById("orange");
+      let pink = document.getElementById("pink");
+      let body = document.getElementById("body");
+      document.getElementById("blue").addEventListener("click", function () {
+        body.style.background = "blue";
+      });
+      document.getElementById("red").addEventListener("click", function () {
+        body.style.background = "red";
+      });
+      document.getElementById("yellow").addEventListener("click", function () {
+        body.style.background = "yellow";
+      });
+      document.getElementById("orange").addEventListener("click", function () {
+        body.style.background = "orange";
+      });
+      document.getElementById("pink").addEventListener("click", function () {
+        body.style.background = "pink";
+      });
+    </script>
+  </body>
+</html>

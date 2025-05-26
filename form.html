@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" id="fname" placeholder="enter the first name" />
+      <input type="text" id="lname" placeholder="enter the last name" />
+      <input type="tel" id="contact" placeholder="enter the contact number" />
+
+      <button id="sumbit">sumbit</button>
+
+      <h1 id="h1">
+        my name is <span id="firstname"></span><span id="lastname"></span>and my
+        contact number is <span id="con"></span>
+      </h1>
+    </div>
+
+    <script>
+      let fname = document.getElementById("fname");
+      let lname = document.getElementById("lname");
+      let contact = document.getElementById("contact");
+      let h1 = document.getElementById("h1");
+
+      let sumbit = document.getElementById("sumbit");
+
+      sumbit.addEventListener("click", () => {
+        fname.innerHTML = fname.value;
+        lname.innerHTML = lname.value;
+        contact.innerHTML = contact.value;
+        h1.style.display = "block ";
+      });
+    </script>
+  </body>
+</html>
