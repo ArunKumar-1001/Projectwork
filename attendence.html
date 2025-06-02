@@ -3,20 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Student's Attendance Tracker</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <li class="students">Arun kumar</li>
-      <li class="students">SreeHari</li>
-      <li class="students">Harsha</li>
-      <li class="students"></li>
-      <li class="students"></li>
-      <li class="students"></li>
-      <li class="students"></li>
-      <li class="students"></li>
-      <li class="students"></li>
-      <li class="students"></li>
-    </div>
+    <h1>Students Monthly Attendance</h1>
+
+    <button id="addStu">Add a Student</button>
+    <button id="seeDetails">See Status</button>
+    <button id="Take_Attendance">Take Attendance</button>
+    <input type="date" id="today" />
+    <h3 id="details"></h3>
+    <!-- <label >Enter Student Id: <input type="text" id="sId" value=""></label><br>
+    <label >Enter Student Name: <input type="text" id="sName" value=""></label><br> -->
+
+    <div id="table_container"></div>
+    <script src="script.js"></script>
   </body>
 </html>
